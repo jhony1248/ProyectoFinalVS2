@@ -97,7 +97,7 @@ namespace Simulacion
             LocNombre = "LOSAN-BLAS";
             // Descripcion de la nota de credito
             Descripcion = "Producto devuelto por falla en suela";
-            FacId = 4;
+            FacId = 5;
             // Notas De Credito
             NotCredito cev4;
 
@@ -118,7 +118,7 @@ namespace Simulacion
             LocNombre = "LOS-PUJILI";
             // Descripcion de la nota de credito
             Descripcion = "Producto devuelto por falla en talla";
-            FacId = 5;
+            FacId = 6;
             // Notas De Credito
             NotCredito cev5;
 
@@ -128,6 +128,27 @@ namespace Simulacion
                 cev5 = NotCreditoProc.CreaNotCredito(db,
                     NotCredEstados.Pendiente.ToString(), fechaEmi, LocNombre, Descripcion, FacId);
                 db.notCreditos.Add(cev5);
+                db.SaveChanges();
+            }
+            //----------------------------------------------------------------------------------------------
+
+            //Nota de credito de la factura5
+            // Fecha Devolucion
+            fechaEmi = new DateTime(2020, 4, 02);
+            // Local
+            LocNombre = "LOS-PUJILI";
+            // Descripcion de la nota de credito
+            Descripcion = "Producto devuelto por falla en calzado";
+            FacId = 4;
+            // Notas De Credito
+            NotCredito cev6;
+
+            // Persistencia 
+            using (var db = new TiendaContext())
+            {
+                cev6 = NotCreditoProc.CreaNotCredito(db,
+                    NotCredEstados.Pendiente.ToString(), fechaEmi, LocNombre, Descripcion, FacId);
+                db.notCreditos.Add(cev6);
                 db.SaveChanges();
             }
             //----------------------------------------------------------------------------------------------

@@ -142,7 +142,18 @@ namespace Escenarios
                 TipoPago = PayPal,
                 cantidad = 8
             };
-            List<Factura> listaFactura = new() { factura1, factura2, factura3, factura4, factura5 };
+
+            Factura factura6 = new()
+            {
+                FechaCompra = new DateTime(2020, 2, 20),
+                Cliente = Maria,
+                Producto = prod18,
+                Local = Local6,
+                TipoPago = PayPal,
+                cantidad = 7
+            };
+
+            List<Factura> listaFactura = new() { factura1, factura2, factura3, factura4, factura5 , factura6 };
             datos.Add(ListaTipo.Facturas, listaFactura);
 
             // Retorna el diccionario 
