@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reportes", "Reportes\Report
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Procesos", "Procesos\Procesos.csproj", "{2B55FDA7-F94C-4F0F-943A-11A4A3BE7C0D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMatriculas", "TestMatriculas\TestMatriculas.csproj", "{E73E761F-7F9E-4582-AA3A-BA252A5788B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNotCredito", "TestMatriculas\TestNotCredito.csproj", "{E73E761F-7F9E-4582-AA3A-BA252A5788B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
